@@ -45,6 +45,8 @@ class App extends Component {
 		return body;
 	}
 
+	//progress bar revolves.
+	
 	progress = () => {
 		const {completed} = this.state;
 		this.setState({completed: completed >= 100 ? 0 : completed + 1});
